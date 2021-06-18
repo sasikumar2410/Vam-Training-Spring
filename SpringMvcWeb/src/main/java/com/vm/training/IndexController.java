@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class MainController {
+public class IndexController {
     @RequestMapping("/")
     public String index(
         @RequestParam(value = "participant", required = false) String participant,
