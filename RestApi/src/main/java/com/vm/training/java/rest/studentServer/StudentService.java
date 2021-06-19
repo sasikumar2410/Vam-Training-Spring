@@ -24,4 +24,8 @@ public class StudentService
 	 creatStudents();
 	 return students;
  }
+public Student getStudentById(int id) {
+	
+	return students.stream().filter(s->s.getId()==id).findFirst().get();
+}
 }
