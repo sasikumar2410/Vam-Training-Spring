@@ -38,6 +38,10 @@ public class WebConfig implements WebMvcConfigurer
         factory.setValidationMessageSource(messageSource);  
         return factory;
     }
- 
+    
+    @Bean
+    public SpringSecurityDialect securityDialect() {
+         return new SpringSecurityDialect();
+    }
     
 }
